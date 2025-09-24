@@ -39,10 +39,10 @@ header a:hover {
     color: #90c7e3; /* c#90c7e3 */
 }
 nav {
-    float: left; /* f1 */
-    font-size: 120px; /* fz120% */
+    float: left; /* fl */
+    font-size: 16px; /* fz120% */
     font-weight: bold; /* fwb */
-    padding: 1em;
+    padding: 1.5em;
     width: 160px; /* w160 */
 }
 
@@ -68,11 +68,11 @@ main {
     margin-left: 190px; /* ml190 */
     padding: 1px 20px 20px 30px;
 
-overflow: auto; /* ova */
+    overflow: auto; /* ova */
 }
 section {
-    float: left; /* f1 */
-    padding-left: 2em; /*pl2em */
+    float: left; /* fl */
+    padding-left: 2em; /* pl2em */
     padding-right: 2em; /* pr2em */
     width: 33%;
 }
