@@ -81,11 +81,9 @@ main {
     padding: 0.0625rem 1.25rem 1.25rem 1.875rem; /* p:0.0625rem 1.25rem 1.25rem 1.075rem */
 
 }
-section {
-    padding: 1rem 0; /* p1rem0 */
-}
+
 h1{
-    letter-spacing: 0.25m; /* lts.25em */
+    letter-spacing: 0.25em; /* lts.25em */
     margin-bottom: 0; /*mb0 */
     margin-top: 0; /* mt0 */
 }
@@ -142,7 +140,7 @@ footer {
     overflow: auto; 
 }
 .card-row section {
-    min-width: 100%; 
+    max-width: 100%; 
     box-sizing: border-box; 
     overflow-wrap: break-word; 
 }
