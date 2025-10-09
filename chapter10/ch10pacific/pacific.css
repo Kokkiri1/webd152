@@ -324,7 +324,7 @@ text-align: left;
     margin-top: 0.5em; /* add spacing above button */
  }
 }
-@media (min-width: 37.5rem) {
+@media (max-width: 37.5rem) {
   nav ul {
     flex-direction: row; /* fd:row */
     justify-content: center; /* jc:center */

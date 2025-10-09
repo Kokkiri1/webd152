@@ -61,7 +61,7 @@ nav ul {
 nav li {
     border-bottom: 1px solid #003; 
     padding: 0.5rem 0; 
-    max-width: 100px;
+    max-width: 100%;
     box-sizing: border-box; 
 }
 nav a {
@@ -80,9 +80,7 @@ main {
   background-color: #fff; /* bgc:#fff */
   padding: 0.0625rem 1.25rem 1.25rem 1.875rem;
 }
-section {
-  padding: 1rem 0; /*pirem-0 */
-}
+
 h1{
     letter-spacing: 0.25em; /* lts: 0.25rem */
     margin-bottom: 0; /*mb0 */
@@ -146,7 +144,7 @@ footer {
     overflow: auto; 
 }
 .card-row section {
-    min-width: 100%; 
+    max-width: 100%; 
     box-sizing: border-box; 
     overflow-wrap: break-word; 
 }
@@ -295,7 +293,14 @@ input[type="submit"]:focus {
     object-fit: cover; /* of:cover */
     transition: transform 0.3s ease; /* trs transform 0.3s ease */
 }
-
+ /* Hover Effect */
+ .gallery-image:hover {
+    transform: scale(1.05); /* slightly enlarge the container */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6) /* deeper shadow */
+ }
+.gallery-image:hover {
+    transform: scale(1.1) /* zoom image for subtle motion */
+}
 /* Figcaption overlay */
 .gallery-image figcaption {
     position: absolute; /* pos:absolute */
@@ -308,8 +313,10 @@ input[type="submit"]:focus {
     font-size: 0.9rem; /* fz:0.9rem */
     text-align: center; /* ta:center */
     opacity: 0; /*o:0 */
-    transition: opacity 0.3s ease, transform 0.3s ease, /* trs:opacity 0.3s,transform 0.3s ease */ 
-    transform translateY(20%); /* trs:translateY(20%) */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* trs: opacity 0.3s ease, transform 0.3s ease */
+
+    
+
 
 
 }
@@ -338,7 +345,7 @@ transform: translateY(0); /* trs: translateY(0) */
     }
 }
 
-@media (min-width: 32.5rem) {
+@media (max-width: 32.5rem) {
      body {
     background-image: none;
     border: none;
@@ -374,9 +381,9 @@ transform: translateY(0); /* trs: translateY(0) */
     overflow: hidden;
  }
  td.package::before {
-    content: "package ";
+    content: "Package: ";
  }
- td description::before {
+ td.description::before {
     content: "Description: ";
  }
  td.nights::before{
