@@ -66,8 +66,7 @@ aside {
 	-moz-flex-direction: row; column
 	-ms-flex-direction: row; column
 	-o-flex-direction: row; column
-	flex-direction: row; column
-}
+	flex-direction: row; column}
 	nav ul {
 		display: flex;
 		flex-direction: row;
